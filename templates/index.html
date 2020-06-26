@@ -1,13 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='/static/style.css' />
-    <title></title>
-</head>
-<body>
-    <h1>Yo!!</h1>
-    <a href='/hello/Ashish'>Hello page...</a>
-</body>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Portfolio site template</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <script> src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+  </head>
+    <body>
+	  
+        <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+	<header>
+		<a class="logo" href="#home">
+							<img src='https://i.postimg.cc/6pZV0dTx/logo.png' border='0' alt='logo'/>
+		</a>
+		<nav>	
+		 <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link active" href="#home">Home</a></li>
+			<li><a class="nav-link" href="#projects">Features</a></li>
+			<li><a class="nav-link" href="#contact">About</a></li>
+		 </ul>
+			
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+			<img src='https://i.postimg.cc/6pZV0dTx/logo.png' border='0' alt='logo'/></a>
+		  <h3>FindMyMood<hr></h3>
+		  <p>A chatbot that detects your mood based on the words you say!</p>
+		  <p>A chatbot that will listen & vibe with you.</p>
+          <p>Developed for people with alexithymia (the inability to detect & describe emotions).</p>
+			<form action="/action_page.php">
+  			<label for="fname">Try it yourself here: </label>
+  			<input type="text" id="fname" name="fname"><br><br>
+  			<input type="submit" value="Enter">
+			</form>
+			  
+		  <!--────social media links─────-->
+			 
+		  <div class="social-media">
+			  <!--<a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>-->
+			  <a href="https://github.com/ashish-hacker/FindMyMood" target="_blank"><i class='fab fa-github'></i></a>
+			  <!--<a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+			  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>-->
+		    </div>
+			 
+		 </section> 
+	  </div>  
+		
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects"> 
+		 <h3>Features<hr></h3>
+		  <p>Features of FindMyMood you will love</p>
+		  <div class="work-box">
+		  <div class="work">
+		<!--───────────────card───────────────-->
+			<div class="card">
+			    <img class="work-img" src="https://www.worldanvil.com/uploads/images/9c089dabb5dcc532109c7b0edbbbaabc.png">
+			    <a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Detects your mood based on the words you say!</div></a>
+            </div>
+			<div class="card">
+			    <img class="work-img" src="https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80">
+				<a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Large database that matches words with a specific mood</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="https://library.kissclipart.com/20180930/tcq/kissclipart-instant-messaging-icon-clipart-instant-messaging-m-0365dcbe1ce9f792.png">
+				<a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Simple interface that's easy to navigate</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="https://miro.medium.com/max/1280/0*Akql8a3a_INHYMIa.gif">
+				<a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Finds mood quickly & intuitively</div></a>
+            </div>   
+		  </div>
+		  </div>
+	  </div>
+		 
+		<!--──────────────Contact────────────────-->
+	  <div id="contact">
+		  <!--────social media links─────-->
+		   <h3>About<hr></h3>
+		   <p>Developed by a group of 4.</p>
+				 <p> Backend: Ashish & Kseniia Borovkova</p>
+				 <p> Frontend: Carm Hermosilla & Trisha Rajesh</p>
+		    <div class="social-media">
+			  <a href="#" target="_blank"><i class='fab fa-github'></i></a>
+		    </div>
+		  </div>
+
+	</main>
+	  <footer class="copyright">© 2020 
+		  <a href="https://repl.it/@lilykhan" target="_blank"> Lilykhan.</a>
+     </footer>
+	  
+  </div>
+  </body>
 </html>
